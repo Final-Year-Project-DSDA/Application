@@ -54,10 +54,6 @@ The model is designed to:
 
 The **SST-GNN** model includes:
 
-Introduces a novel approach to connect node embeddings of adjacent timestamps.​
-
-Spatial, Temporal and historical model used
-
 - **Spatial Aggregation**: Handles different hop neighbors, focusing on their distinct impacts on traffic.
 - **Temporal Aggregation**: Encodes the time-based influence by weighting the contribution of previous timestamps.
 - **Historical and Current-Day Models**: Two models that separately capture daily and historical traffic patterns.
