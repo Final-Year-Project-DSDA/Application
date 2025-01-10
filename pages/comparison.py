@@ -51,36 +51,36 @@ class ComparisonPage:
                     }
                 }
             ),
-            "SSTGNN": SpatioTemporalModel(
-                name="Simplified Spatio-Temporal Traffic Forecasting Model Using Graph Neural Network",
-                task="Spatio-Temporal Forecasting",
-                datasets=["PEMS07"],
-                results={
-                    "PEMS07": {
-                        "45-minutes": {"MAE": 5.75, "RMSE": 3.15, "MAPE": 7.94}
-                    }
-                }
-            ),
-            "STGAN": SpatioTemporalModel(
-                name="Spatio-Temporal Generative Adversarial Network",
-                task="Spatio-Temporal Forecasting",
-                datasets=["PEMS07"],
-                results={
-                    "PEMS07": {
-                          "45-minutes": {"MAE": 3.848, "RMSE": 6.299, "MAPE": 9.210}
-                    },
-                }
-            ),
-            "EMAGCN": SpatioTemporalModel(
-                name="Exponential Moving Average Graph Convolutional Network",
-                task="Spatio-Temporal Forecasting",
-                datasets=["PEMS07"],
-                results={
-                    "PEMS07": {
-                        "5-minutes": {"MAE": 0.3098, "RMSE": 0.5475, "MSE": 0.2998, "r-squared": 0.7048}
-                    }
-                }
-            ),
+            # "SSTGNN": SpatioTemporalModel(
+            #     name="Simplified Spatio-Temporal Traffic Forecasting Model Using Graph Neural Network",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["PEMS07"],
+            #     results={
+            #         "PEMS07": {
+            #             "45-minutes": {"MAE": 5.75, "RMSE": 3.15, "MAPE": 7.94}
+            #         }
+            #     }
+            # ),
+            # "STGAN": SpatioTemporalModel(
+            #     name="Spatio-Temporal Generative Adversarial Network",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["PEMS07"],
+            #     results={
+            #         "PEMS07": {
+            #               "45-minutes": {"MAE": 3.848, "RMSE": 6.299, "MAPE": 9.210}
+            #         },
+            #     }
+            # ),
+            # "EMAGCN": SpatioTemporalModel(
+            #     name="Exponential Moving Average Graph Convolutional Network",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["PEMS07"],
+            #     results={
+            #         "PEMS07": {
+            #             "5-minutes": {"MAE": 0.3098, "RMSE": 0.5475, "MSE": 0.2998, "r-squared": 0.7048}
+            #         }
+            #     }
+            # ),
             "GCN": SpatioTemporalModel(
                 name="Graph Convolutional Network",
                 task="Node Classification",
@@ -136,16 +136,16 @@ class ComparisonPage:
                     }
                 }
             ),
-            "DyGrEncoder": SpatioTemporalModel(
-                name="Dynamic Graph Encoder",
-                task="Spatio-Temporal Forecasting",
-                datasets=["Chickenpox"],
-                results={
-                    "Chickenpox": {
-                        "1-week": {"MSE": 0.9655, "MAE": 0.6355, "MAPE": 1060.5135, "RMSE": 0.9826, "R-squared": 0.0411}
-                    }
-                }
-            ),
+            # "DyGrEncoder": SpatioTemporalModel(
+            #     name="Dynamic Graph Encoder",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["Chickenpox"],
+            #     results={
+            #         "Chickenpox": {
+            #             "1-week": {"MSE": 0.9655, "MAE": 0.6355, "MAPE": 1060.5135, "RMSE": 0.9826, "R-squared": 0.0411}
+            #         }
+            #     }
+            # ),
             "EvolveGCNH": SpatioTemporalModel(
                 name="Evolving Graph Convolutional Network (Heterogeneous)",
                 task="Spatio-Temporal Forecasting",
@@ -166,46 +166,46 @@ class ComparisonPage:
                     }
                 }
             ),
-            "GCLSTM": SpatioTemporalModel(
-                name="Graph Convolutional LSTM",
-                task="Spatio-Temporal Forecasting",
-                datasets=["Chickenpox"],
-                results={
-                    "Chickenpox": {
-                        "1-week": {"MSE": 1.1536, "MAE": 0.6915, "R-squared": -0.0925}
-                    }
-                }
-            ),
-            "GConvGRU": SpatioTemporalModel(
-                name="Graph Convolutional GRU",
-                task="Spatio-Temporal Forecasting",
-                datasets=["Chickenpox"],
-                results={
-                    "Chickenpox": {
-                        "1-week": {"MSE": 0.9676, "MAE": 0.6274, "MAPE": 583.1867, "RMSE": 0.9837, "R-squared": 0.0390}
-                    }
-                }
-            ),
-            "GConvLSTM": SpatioTemporalModel(
-                name="Graph Convolutional LSTM",
-                task="Spatio-Temporal Forecasting",
-                datasets=["Chickenpox"],
-                results={
-                    "Chickenpox": {
-                        "1-week": {"MSE": 0.9646, "MAE": 0.6288, "MAPE": 554.9057, "RMSE": 0.9821, "R-squared": 0.0420}
-                    }
-                }
-            ),
-            "LRGCN": SpatioTemporalModel(
-                name="Low-Rank Graph Convolutional Network",
-                task="Spatio-Temporal Forecasting",
-                datasets=["Chickenpox"],
-                results={
-                    "Chickenpox": {
-                        "1-week": {"MSE": 1.0638}
-                    }
-                }
-            ),
+            # "GCLSTM": SpatioTemporalModel(
+            #     name="Graph Convolutional LSTM",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["Chickenpox"],
+            #     results={
+            #         "Chickenpox": {
+            #             "1-week": {"MSE": 1.1536, "MAE": 0.6915, "R-squared": -0.0925}
+            #         }
+            #     }
+            # ),
+            # "GConvGRU": SpatioTemporalModel(
+            #     name="Graph Convolutional GRU",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["Chickenpox"],
+            #     results={
+            #         "Chickenpox": {
+            #             "1-week": {"MSE": 0.9676, "MAE": 0.6274, "MAPE": 583.1867, "RMSE": 0.9837, "R-squared": 0.0390}
+            #         }
+            #     }
+            # ),
+            # "GConvLSTM": SpatioTemporalModel(
+            #     name="Graph Convolutional LSTM",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["Chickenpox"],
+            #     results={
+            #         "Chickenpox": {
+            #             "1-week": {"MSE": 0.9646, "MAE": 0.6288, "MAPE": 554.9057, "RMSE": 0.9821, "R-squared": 0.0420}
+            #         }
+            #     }
+            # ),
+            # "LRGCN": SpatioTemporalModel(
+            #     name="Low-Rank Graph Convolutional Network",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["Chickenpox"],
+            #     results={
+            #         "Chickenpox": {
+            #             "1-week": {"MSE": 1.0638}
+            #         }
+            #     }
+            # ),
             "MPNNLSTM": SpatioTemporalModel(
                 name="Message Passing Neural Network LSTM",
                 task="Spatio-Temporal Forecasting",
@@ -216,18 +216,18 @@ class ComparisonPage:
                     }
                 }
             ),
-            "STGNN": SpatioTemporalModel(
-                name="STGNN: Spatio-Temporal Graph Neural Networks",
-                task="Spatio-Temporal Forecasting",
-                datasets=["METR-LA"],
-                results={
-                    "METR-LA": {
-                        "15-minutes": {"MAE": 2.93, "MAPE": 7.54, "RMSE": 5.61},
-                        "30-minutes":{"MAE": 3.29, "MAPE": 8.77, "RMSE": 6.47}, 
-                        "60-minutes":{"MAE": 3.89, "MAPE": 11, "RMSE": 7.79}
-                    }
-                },
-            )
+            # "STGNN": SpatioTemporalModel(
+            #     name="STGNN: Spatio-Temporal Graph Neural Networks",
+            #     task="Spatio-Temporal Forecasting",
+            #     datasets=["METR-LA"],
+            #     results={
+            #         "METR-LA": {
+            #             "15-minutes": {"MAE": 2.93, "MAPE": 7.54, "RMSE": 5.61},
+            #             "30-minutes":{"MAE": 3.29, "MAPE": 8.77, "RMSE": 6.47}, 
+            #             "60-minutes":{"MAE": 3.89, "MAPE": 11, "RMSE": 7.79}
+            #         }
+            #     },
+            # )
         }
 
         # Detailed dataset overview information

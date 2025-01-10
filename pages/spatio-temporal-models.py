@@ -58,36 +58,37 @@ class SpatioTemporalModels:
                 markdown_file_path="./objects/st/a3tgcn.md",
                 image_folder_path="./images/a3tgcn/"
             ),
-            "SSTGNN": SpatioTemporalModel(
-                name="Simplified Spatio-Temporal Traffic Forecasting Model Using Graph Neural Network",
-                datasets=["PEMS07"],
-                results={
-                    "PEMS07": {"MAE": 5.7507, "RMSE": 3.1506, "MAPE": 7.9441}
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/sstgnn.md",
-                image_folder_path="./images/sstgnn/"
-            ),
-            "STGAN": SpatioTemporalModel(
-                name="Spatio-Temporal Generative Adversarial Network",
-                datasets=["PEMS07"],
-                results={
-                    "PEMS07": {"MAE": 3.848, "RMSE": 6.299, "MAPE": 9.210}
-                },
-                versions=["v1.0", "v2.0"],
-                markdown_file_path="./objects/st/stgan.md",
-                image_folder_path="./images/stgan/"
-            ),
-            "EMAGCN": SpatioTemporalModel(
-                name="Exponential Moving Average Graph Convolutional Network",
-                datasets=["PEMS07"],
-                results={
-                    "PEMS07": {"MAE": 0.3098, "RMSE": 0.5475, "MSE": 0.2998, "r-squared": 0.7048}
-                },
-                versions=["v1.0", "v2.0"],
-                markdown_file_path="./objects/st/EMAGCN.md",
-                image_folder_path="./images/emagcn/"
-            ),
+            # "SSTGNN": SpatioTemporalModel(
+            #     name="Simplified Spatio-Temporal Traffic Forecasting Model Using Graph Neural Network",
+            #     datasets=["PEMS07"],
+            #     results={
+            #         "PEMS07": {"MAE": 5.7507, "RMSE": 3.1506, "MAPE": 7.9441}
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/sstgnn.md",
+            #     image_folder_path="./images/sstgnn/"
+            # ),
+            
+            # "STGAN": SpatioTemporalModel(
+            #     name="Spatio-Temporal Generative Adversarial Network",
+            #     datasets=["PEMS07"],
+            #     results={
+            #         "PEMS07": {"MAE": 3.848, "RMSE": 6.299, "MAPE": 9.210}
+            #     },
+            #     versions=["v1.0", "v2.0"],
+            #     markdown_file_path="./objects/st/stgan.md",
+            #     image_folder_path="./images/stgan/"
+            # ),
+            # "EMAGCN": SpatioTemporalModel(
+            #     name="Exponential Moving Average Graph Convolutional Network",
+            #     datasets=["PEMS07"],
+            #     results={
+            #         "PEMS07": {"MAE": 0.3098, "RMSE": 0.5475, "MSE": 0.2998, "r-squared": 0.7048}
+            #     },
+            #     versions=["v1.0", "v2.0"],
+            #     markdown_file_path="./objects/st/EMAGCN.md",
+            #     image_folder_path="./images/emagcn/"
+            # ),
             # New Models for chickenpox dataset
             "AGCRN": SpatioTemporalModel(
                 name="Attention-based Graph Convolutional Recurrent Network",
@@ -99,16 +100,16 @@ class SpatioTemporalModels:
                 markdown_file_path="./objects/st/agcrn.md",
                 image_folder_path="./images/agcrn/"
             ),
-            "DyGrEncoder": SpatioTemporalModel(
-                name="Dynamic Graph Encoder",
-                datasets=["chickenpox"],
-                results={
-                    "chickenpox": {"MSE": 0.9655, "MAE": 0.6355, "MAPE": 1060.5135, "RMSE": 0.9826, "R-squared": 0.0411}
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/dygrencoder.md",
-                image_folder_path="./images/dygrencoder/"
-            ),
+            # "DyGrEncoder": SpatioTemporalModel(
+            #     name="Dynamic Graph Encoder",
+            #     datasets=["chickenpox"],
+            #     results={
+            #         "chickenpox": {"MSE": 0.9655, "MAE": 0.6355, "MAPE": 1060.5135, "RMSE": 0.9826, "R-squared": 0.0411}
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/dygrencoder.md",
+            #     image_folder_path="./images/dygrencoder/"
+            # ),
             "EvolveGCNH": SpatioTemporalModel(
                 name="Evolving Graph Convolutional Network (Heterogeneous)",
                 datasets=["chickenpox"],
@@ -129,46 +130,46 @@ class SpatioTemporalModels:
                 markdown_file_path="./objects/st/evolvegcno.md",
                 image_folder_path="./images/evolvegcno/"
             ),
-            "GCLSTM": SpatioTemporalModel(
-                name="Graph Convolutional LSTM",
-                datasets=["chickenpox"],
-                results={
-                    "chickenpox": {"MSE": 1.1536, "MAE": 0.6915, "R-squared": -0.0925}
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/gclstm.md",
-                image_folder_path="./images/gclstm/"
-            ),
-            "GConvGRU": SpatioTemporalModel(
-                name="Graph Convolutional GRU",
-                datasets=["chickenpox"],
-                results={
-                    "chickenpox": {"MSE": 0.9676, "MAE": 0.6274, "MAPE": 583.1867, "RMSE": 0.9837, "R-squared": 0.0390}
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/gconvgru.md",
-                image_folder_path="./images/gconvgru/"
-            ),
-            "GConvLSTM": SpatioTemporalModel(
-                name="Graph Convolutional LSTM",
-                datasets=["chickenpox"],
-                results={
-                    "chickenpox": {"MSE": 0.9646, "MAE": 0.6288, "MAPE": 554.9057, "RMSE": 0.9821, "R-squared": 0.0420}
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/gconvlstm.md",
-                image_folder_path="./images/gconvlstm/"
-            ),
-            "LRGCN": SpatioTemporalModel(
-                name="Low-Rank Graph Convolutional Network",
-                datasets=["chickenpox"],
-                results={
-                    "chickenpox": {"MSE": 1.0638}
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/lrgcn.md",
-                image_folder_path="./images/lrgcn/"
-            ),
+            # "GCLSTM": SpatioTemporalModel(
+            #     name="Graph Convolutional LSTM",
+            #     datasets=["chickenpox"],
+            #     results={
+            #         "chickenpox": {"MSE": 1.1536, "MAE": 0.6915, "R-squared": -0.0925}
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/gclstm.md",
+            #     image_folder_path="./images/gclstm/"
+            # ),
+            # "GConvGRU": SpatioTemporalModel(
+            #     name="Graph Convolutional GRU",
+            #     datasets=["chickenpox"],
+            #     results={
+            #         "chickenpox": {"MSE": 0.9676, "MAE": 0.6274, "MAPE": 583.1867, "RMSE": 0.9837, "R-squared": 0.0390}
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/gconvgru.md",
+            #     image_folder_path="./images/gconvgru/"
+            # ),
+            # "GConvLSTM": SpatioTemporalModel(
+            #     name="Graph Convolutional LSTM",
+            #     datasets=["chickenpox"],
+            #     results={
+            #         "chickenpox": {"MSE": 0.9646, "MAE": 0.6288, "MAPE": 554.9057, "RMSE": 0.9821, "R-squared": 0.0420}
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/gconvlstm.md",
+            #     image_folder_path="./images/gconvlstm/"
+            # ),
+            # "LRGCN": SpatioTemporalModel(
+            #     name="Low-Rank Graph Convolutional Network",
+            #     datasets=["chickenpox"],
+            #     results={
+            #         "chickenpox": {"MSE": 1.0638}
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/lrgcn.md",
+            #     image_folder_path="./images/lrgcn/"
+            # ),
             "MPNNLSTM": SpatioTemporalModel(
                 name="Message Passing Neural Network LSTM",
                 datasets=["chickenpox"],
@@ -179,20 +180,20 @@ class SpatioTemporalModels:
                 markdown_file_path="./objects/st/mpnnlstm.md",
                 image_folder_path="./images/mpnnlstm/"
             ),
-            "STGNN": SpatioTemporalModel(
-                name="STGNN: Spatio-Temporal Graph Neural Networks",
-                datasets=["METR-LA"],
-                results={
-                    "METR-LA": {
-                        "15-minutes": {"MAE": 2.93, "MAPE": 7.54, "RMSE": 5.61},
-                        "30-minutes":{"MAE": 3.29, "MAPE": 8.77, "RMSE": 6.47}, 
-                        "60-minutes":{"MAE": 3.89, "MAPE": 11, "RMSE": 7.79}
-                    }
-                },
-                versions=["v1.0"],
-                markdown_file_path="./objects/st/stgnn.md",
-                image_folder_path="./images/stgnn/"
-            )
+            # "STGNN": SpatioTemporalModel(
+            #     name="STGNN: Spatio-Temporal Graph Neural Networks",
+            #     datasets=["METR-LA"],
+            #     results={
+            #         "METR-LA": {
+            #             "15-minutes": {"MAE": 2.93, "MAPE": 7.54, "RMSE": 5.61},
+            #             "30-minutes":{"MAE": 3.29, "MAPE": 8.77, "RMSE": 6.47}, 
+            #             "60-minutes":{"MAE": 3.89, "MAPE": 11, "RMSE": 7.79}
+            #         }
+            #     },
+            #     versions=["v1.0"],
+            #     markdown_file_path="./objects/st/stgnn.md",
+            #     image_folder_path="./images/stgnn/"
+            # )
 
         }
 
