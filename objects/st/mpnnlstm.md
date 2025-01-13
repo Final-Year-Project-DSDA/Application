@@ -3,7 +3,7 @@
 
 *Year*: 2021  
 *Publication*: AAAI Conference on Artificial Intelligence  
-*Paper Link*: Not provided  
+*Paper Link*: https://ojs.aaai.org/index.php/AAAI/article/view/16616/16423
 
 #### Task:
 - *COVID-19 Spread Prediction*
