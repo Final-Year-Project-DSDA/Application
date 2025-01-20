@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def get_model_recommendation(temporal_resolution, resources, prediction_horizon, data_volume, architecture_preference):
-    # Scores Init
+    # Scores Initialization
     models = {
         'DCRNN': 0,
         'A3TGCN': 0,
@@ -21,7 +21,7 @@ def get_model_recommendation(temporal_resolution, resources, prediction_horizon,
         models['A3TGCN'] += 2
         models['ASTGCN'] += 2
         models['ST-GCN'] += 2
-    else: 
+    else:
         models['A3TGCN'] += 3
         models['EvolveGCN'] += 3
         models['SSTGCN'] += 2
@@ -33,7 +33,7 @@ def get_model_recommendation(temporal_resolution, resources, prediction_horizon,
     elif resources == "Medium":
         models['A3TGCN'] += 2
         models['ST-GCN'] += 3
-    else: 
+    else:
         models['SSTGCN'] += 3
         models['ST-GCN'] += 2
 
@@ -62,7 +62,7 @@ def get_model_recommendation(temporal_resolution, resources, prediction_horizon,
     if architecture_preference == "Factorized (Faster training)":
         models['ST-GCN'] += 2
         models['SSTGCN'] += 2
-    else:  
+    else:
         models['DCRNN'] += 2
         models['ASTGCN'] += 2
 
